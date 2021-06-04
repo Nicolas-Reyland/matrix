@@ -1,7 +1,8 @@
 # matrix
-matrix module for 3d, 2D and vector maths (especially trigonometry/geometry)
+Geometry module. All the maths, geometry & trigonometry (2D/3D) functions are in here.
 
-[Installation]
-run:
- - pip install noise
- - python setup.py
+## Installation
+```
+pip install noise
+python setup.py
+```
