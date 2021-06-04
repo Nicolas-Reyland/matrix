@@ -123,10 +123,13 @@ class Plane:
 		self.a, self.b, self.c, self.d = a, b, c, d
 
 	def point_on_plane(self, point : list[float]) -> bool:
-		return self.dist_with_point(point) < EPSILON
+		return self.normal_dist(point) < EPSILON
+
+	def normal_dist(self, point : list[float]) -> float:
+		return abs(self.a*point[0] + self.b*point[1] + self.c*point[2] + self.d)
 
 	def dist_with_point(self, point : list[float]) -> float:
-		return abs(self.a*point[0] + self.b*point[1] + self.c*point[2] + self.d) / self.base()
+		return self.normal_dist(point) / self.base()
 
 	def base(self):
 		return np.sqrt(self.a**2 + self.b**2 + self.c**2)
