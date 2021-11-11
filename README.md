@@ -1,11 +1,5 @@
 # matrix
-Geometry module. All the maths, geometry & trigonometry (2D/3D) functions I need for my projects.
-
-## Installation
-```
-pip install noise
-python setup.py
-```
+Geometry module. All the maths (mainly geometry & trigonometry) I need for my projects.
 
 ## Examples
 Here is a list of *some* of my projects that use the matrix module (all might not be public anymore):
